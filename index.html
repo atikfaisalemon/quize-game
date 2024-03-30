@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body class="bg-white">
+    <main class="w-1/2 mx-auto mt-20 px-16 py-10 bg-[#F9EEF0] rounded-xl">
+      <!-- top section  -->
+      <section class="">
+        <div class="flex justify-between">
+          <!-- progress bar -->
+          <div class="flex flex-col items-center gap-3">
+            <div>
+              <h1 class="text-2xl">Question: <span>1/5</span></h1>
+            </div>
+            <div
+              class="w-32 bg-transparent border-solid border-2 border-[#CC8D8B] p-[1px]"
+            >
+              <div
+                class="bg-[#CC8D8B] h-5 text-xs font-medium text-blue-100 text-right p-3 leading-none flex items-center"
+                style="width: 50%"
+              ></div>
+            </div>
+          </div>
+
+          <!-- score table -->
+
+          <div class="flex flex-col items-center gap-2">
+            <h1 class="text-2xl">Score</h1>
+            <h1 class="text-5xl text-[#CC8D8B]"><span>0</span></h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- Question section  -->
+      <section class="mt-20">
+        <form action="/action_page.php">
+          <p>What is the Capital of Bangladesh ?</p>
+           
+          <input type="radio" id="Dhaka" name="capital" value="dhaka" />  
+          <label for="html">Dhaka</label><br />
+           
+          <input type="radio" id="chitta" name="capital" value="Chittagong" />
+            <label for="chitta">Chittagong</label><br />
+           
+          <input type="radio" id="raj" name="capital" value="Rajshahi" />
+            <label for="raj">Rajshahi</label>
+
+          <br /><br />
+
+          <p>Who is the founder of Facebook ?</p>
+          <input type="radio" id="bill" name="founder" value="Bill Gates" />
+          <label for="bill">Bill Gates</label><br />
+          <input type="radio" id="age2" name="founder" value="60" />
+          <label for="age2">Elon Musk</label><br />
+          <input type="radio" id="age3" name="founder" value="100" />
+          <label for="age3">Mark Zuckerberg</label><br /><br />
+
+          <p>Where is Apple's headquarters located ?</p>
+          <input type="radio" id="alaska" name="location" value="Alaska" />
+          <label for="age1">Alaska</label><br />
+          <input type="radio" id="california" name="location" value="60" />
+          <label for="age2">California</label><br />
+          <input type="radio" id="newYork" name="location" value="New York" />
+          <label for="age3">New York</label><br /><br />
+
+          <p>What is the current iPhone model ?</p>
+          <input type="radio" id="phone17" name="phone" value="iPhone 17" />
+          <label for="phone17">iPhone 17</label><br />
+          <input type="radio" id="phone14" name="phone" value="iPhone 14" />
+          <label for="phone14">iPhone 14</label><br />
+          <input type="radio" id="phone15" name="phone" value="iPhone 15" />
+          <label for="phone15">iPhone 15</label><br /><br />
+          <br />
+          <!-- submit button  -->
+          <input
+            class="bg-[#CC8D8B] p-1 px-5 rounded-md text-white"
+            type="submit"
+            value="Submit"
+          />
+        </form>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
