@@ -1,24 +1,19 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import "./style.css";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+const submit = document.getElementById("btn");
+const answerElement = document.getElementsByClassName("checked");
+let score = 0;
 
-setupCounter(document.querySelector('#counter'))
+submit.addEventListener("click", checkedAns);
+
+function checkedAns() {
+  const checked = document.querySelector('input[type="radio"]:checked');
+  const anss = checked.nextElementSibling.textContent;
+  console.log(anss);
+
+  if (anss === "iPhone 15") {
+    score++;
+  } else {
+    document.getElementById("finalScore").innerHTML = score;
+  }
+}

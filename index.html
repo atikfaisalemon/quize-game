@@ -30,58 +30,110 @@
 
           <div class="flex flex-col items-center gap-2">
             <h1 class="text-2xl">Score</h1>
-            <h1 class="text-5xl text-[#CC8D8B]"><span>0</span></h1>
+            <h1 class="text-5xl text-[#CC8D8B]">
+              <span id="finalScore">0</span>
+            </h1>
           </div>
         </div>
       </section>
 
       <!-- Question section  -->
       <section class="mt-20">
-        <form action="/action_page.php">
-          <p>What is the Capital of Bangladesh ?</p>
-           
-          <input type="radio" id="Dhaka" name="capital" value="dhaka" />  
-          <label for="html">Dhaka</label><br />
-           
-          <input type="radio" id="chitta" name="capital" value="Chittagong" />
-            <label for="chitta">Chittagong</label><br />
-           
-          <input type="radio" id="raj" name="capital" value="Rajshahi" />
-            <label for="raj">Rajshahi</label>
+        <p>What is the Capital of Bangladesh ?</p>
+         
+        <input type="radio" id="dhaka" name="capital" value="dhaka" />  
+        <label for="dhaka">Dhaka</label><br />
+         
+        <input type="radio" id="chitta" name="capital" value="Chittagong" />
+          <label for="chitta">Chittagong</label><br />
+         
+        <input type="radio" id="raj" name="capital" value="Rajshahi" />
+          <label for="raj">Rajshahi</label>
 
-          <br /><br />
+        <br /><br />
 
-          <p>Who is the founder of Facebook ?</p>
-          <input type="radio" id="bill" name="founder" value="Bill Gates" />
-          <label for="bill">Bill Gates</label><br />
-          <input type="radio" id="age2" name="founder" value="60" />
-          <label for="age2">Elon Musk</label><br />
-          <input type="radio" id="age3" name="founder" value="100" />
-          <label for="age3">Mark Zuckerberg</label><br /><br />
+        <p>Who is the founder of Facebook ?</p>
+        <input
+          type="radio"
+          class="checked"
+          id="bill"
+          name="founder"
+          value="Bill Gates"
+        />
+        <label for="bill">Bill Gates</label><br />
+        <input
+          type="radio"
+          class="checked"
+          id="musk"
+          name="founder"
+          value="60"
+        />
+        <label for="musk">Elon Musk</label><br />
+        <input
+          type="radio"
+          class="checked"
+          id="mark"
+          name="founder"
+          value="Mark Zuckerber"
+        />
+        <label for="mark">Mark Zuckerberg</label><br /><br />
 
-          <p>Where is Apple's headquarters located ?</p>
-          <input type="radio" id="alaska" name="location" value="Alaska" />
-          <label for="age1">Alaska</label><br />
-          <input type="radio" id="california" name="location" value="60" />
-          <label for="age2">California</label><br />
-          <input type="radio" id="newYork" name="location" value="New York" />
-          <label for="age3">New York</label><br /><br />
+        <p>Where is Apple's headquarters located ?</p>
+        <input
+          type="radio"
+          class="checked"
+          id="alaska"
+          name="location"
+          value="Alaska"
+        />
+        <label for="alaska">Alaska</label><br />
+        <input
+          type="radio"
+          class="checked"
+          id="california"
+          name="location"
+          value="60"
+        />
+        <label for="california">California</label><br />
+        <input
+          type="radio"
+          class="checked"
+          id="newYork"
+          name="location"
+          value="New York"
+        />
+        <label for="newYork">New York</label><br /><br />
 
-          <p>What is the current iPhone model ?</p>
-          <input type="radio" id="phone17" name="phone" value="iPhone 17" />
-          <label for="phone17">iPhone 17</label><br />
-          <input type="radio" id="phone14" name="phone" value="iPhone 14" />
-          <label for="phone14">iPhone 14</label><br />
-          <input type="radio" id="phone15" name="phone" value="iPhone 15" />
-          <label for="phone15">iPhone 15</label><br /><br />
-          <br />
-          <!-- submit button  -->
-          <input
-            class="bg-[#CC8D8B] p-1 px-5 rounded-md text-white"
-            type="submit"
-            value="Submit"
-          />
-        </form>
+        <p>What is the current iPhone model ?</p>
+        <input
+          type="radio"
+          class="checked"
+          id="phone17"
+          name="phone"
+          value="iPhone 17"
+        />
+        <label for="phone17">iPhone 17</label><br />
+        <input
+          type="radio"
+          class="checked"
+          id="phone14"
+          name="phone"
+          value="iPhone 14"
+        />
+        <label for="phone14">iPhone 14</label><br />
+        <input
+          type="radio"
+          class="checked"
+          id="phone15"
+          name="phone"
+          value="iPhone 15"
+        />
+        <label for="phone15">iPhone 15</label><br /><br />
+        <br />
+        <!-- submit button  -->
+        <button id="btn" class="bg-[#CC8D8B] p-1 px-5 rounded-md text-white">
+          Submit
+        </button>
       </section>
     </main>
     <script type="module" src="/main.js"></script>
