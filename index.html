@@ -38,17 +38,16 @@
       </section>
 
       <!-- Question section  -->
-      <section class="mt-20">
-        <p>What is the Capital of Bangladesh ?</p>
-         
-        <input type="radio" id="dhaka" name="capital" value="dhaka" />  
-        <label for="dhaka">Dhaka</label><br />
-         
-        <input type="radio" id="chitta" name="capital" value="Chittagong" />
-          <label for="chitta">Chittagong</label><br />
-         
-        <input type="radio" id="raj" name="capital" value="Rajshahi" />
-          <label for="raj">Rajshahi</label>
+      <form class="mt-20" id="question_form">
+        <div>
+          <p>What is the Capital of Bangladesh ?</p>
+          <input type="radio" id="dhaka" name="capital" value="dhaka" />
+          <label for="dhaka">Dhaka</label><br />
+          <input type="radio" id="chitta" name="capital" value="Chittagong" />
+          <label for="chitta">Chittagong</label><br />
+          <input type="radio" id="raj" name="capital" value="Rajshahi" />
+          <label for="raj">Rajshahi</label>
+        </div>
 
         <br /><br />
 
@@ -58,7 +57,7 @@
           class="checked"
           id="bill"
           name="founder"
-          value="Bill Gates"
+          value="bill"
         />
         <label for="bill">Bill Gates</label><br />
         <input
@@ -92,7 +91,7 @@
           class="checked"
           id="california"
           name="location"
-          value="60"
+          value="california"
         />
         <label for="california">California</label><br />
         <input
@@ -110,7 +109,7 @@
           class="checked"
           id="phone17"
           name="phone"
-          value="iPhone 17"
+          value="iPhone17"
         />
         <label for="phone17">iPhone 17</label><br />
         <input
@@ -118,7 +117,7 @@
           class="checked"
           id="phone14"
           name="phone"
-          value="iPhone 14"
+          value="iPhone14"
         />
         <label for="phone14">iPhone 14</label><br />
         <input
@@ -126,15 +125,18 @@
           class="checked"
           id="phone15"
           name="phone"
-          value="iPhone 15"
+          value="iPhone15"
         />
         <label for="phone15">iPhone 15</label><br /><br />
         <br />
         <!-- submit button  -->
-        <button id="btn" class="bg-[#CC8D8B] p-1 px-5 rounded-md text-white">
+        <button
+          type="submit"
+          class="bg-[#CC8D8B] p-1 px-5 rounded-md text-white"
+        >
           Submit
         </button>
-      </section>
+      </form>
     </main>
     <script type="module" src="/main.js"></script>
   </body>
